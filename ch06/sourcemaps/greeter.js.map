@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "file": "greeter.js",
+  "sourceRoot": "",
+  "sources": [
+    "greeter.ts"
+  ],
+  "names": [],
+  "mappings": "AAAA;IAAA;IAMA,CAAC;IAJU,gBAAQ,GAAf,UAAgB,IAAY;QAExB,OAAO,CAAC,GAAG,CAAE,gBAAS,IAAI,CAAE,CAAC,CAAC;IAClC,CAAC;IACL,cAAC;AAAD,CAAC,AAND,IAMC;AAED,OAAO,CAAC,QAAQ,CAAC,MAAM,CAAC,CAAC",
+  "sourcesContent": [
+    "class Greeter {\n\n    static sayHello(name: string) {\n\n        console.log (`Hello ${name}`);   \n    }\n}\n\nGreeter.sayHello('John');"
+  ]
+}

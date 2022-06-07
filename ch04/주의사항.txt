@@ -1,0 +1,4 @@
+* tsconfig.json 설정 반영시
+$ tsc
+* tsconfig.json 설정 반영없이
+$ tsc [대상파일명].ts
