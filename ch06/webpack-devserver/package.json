@@ -1,20 +1,24 @@
 {
-  "name": "webpack-devserver",
+  "name": "webpack-demo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server",
-    "bundleup": "webpack-cli --watch"
+    "watch": "webpack --watch",
+    "start": "webpack server --open",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync-webpack-plugin": "^2.3.0",
-    "webpack": "^5.72.1",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.73.0",
     "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.9.0"
+    "webpack-dev-server": "^4.9.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }
