@@ -1,23 +1,22 @@
-const { resolve } = require('path');
+const path = require("path");
 
 module.exports = {
-    entry: './src/index.ts',
-    output: {
-        filename: 'index.bundle.js',
-        path: resolve(__dirname, 'dist')
-    },
-    module: {
-        rules: [
-            {
-                test: /\.ts$/,
-                exclude: /node_modules/,
-                use: 'ts-loader' // picks up existing tsconfig.json
-            }
-        ]
-    },
-    resolve: {
-        extensions: [ '.ts', '.js' ] // Add .ts extension to the resolve config to be able to import TS files in your source code.
-    },
-    target: 'node', // do not inline built-in modules (e.g. os, path, crypto, etc.)
-    mode: 'production' // optimize the file size of the output bundle
+  mode: "development",
+  entry: "./src/index.ts",
+  module: {
+    rules: [
+      {
+        test: /\.tsx?$/,
+        use: "ts-loader",
+        exclude: /node_modules/,
+      },
+    ],
+  },
+  resolve: {
+    extensions: [".tsx", ".ts", ".js"],
+  },
+  output: {
+    filename: "bundle.js",
+    path: path.resolve(__dirname, "dist"),
+  },
 };

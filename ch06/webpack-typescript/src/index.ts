@@ -1,5 +1,12 @@
-import chalk from 'chalk'; // instead of `import * as chalk from 'chalk'` because chalk explicitly exposes a default export.
+import _ from "lodash";
 
-const message: string = 'Bundled by the Webpack';
+function component() {
+  const element = document.createElement("div");
 
-console.log(chalk.black.bgGreenBright(message));
+  // Lodash, now imported by this script
+  element.innerHTML = _.join(["Hello", "webpack"], " ");
+
+  return element;
+}
+
+document.body.appendChild(component());

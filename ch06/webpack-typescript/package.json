@@ -1,18 +1,23 @@
 {
-    "name": "webpack-typescript",
-    "description": "Code sample for the TypeScript Quickly book",
-    "homepage": "https://www.manning.com/books/typescript-quickly",
-    "license": "MIT",
-    "scripts": {
-        "bundleup": "webpack-cli"
-    },
-    "dependencies": {
-        "chalk": "^2.4.1"
-    },
-    "devDependencies": {
-        "ts-loader": "^5.3.2",
-        "typescript": "^3.2.2",
-        "webpack": "^4.28.3",
-        "webpack-cli": "^3.1.2"
-    }
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/lodash": "^4.14.182",
+    "ts-loader": "^9.3.0",
+    "typescript": "^4.7.3",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
