@@ -1,18 +1,19 @@
 {
-    "name": "babel-typescript",
-    "description": "Code sample for the TypeScript Quickly book",
-    "homepage": "https://www.manning.com/books/typescript-quickly",
-    "license": "MIT",
-    "scripts": {
-        "babel": "babel src -d dist --extensions '.ts'"
-    },
-    "dependencies": {
-        "chalk": "^2.4.1"
-    },
-    "devDependencies": {
-        "@babel/cli": "^7.2.3",
-        "@babel/core": "^7.2.2",
-        "@babel/preset-env": "^7.2.3",
-        "@babel/preset-typescript": "^7.1.0"
-    }
+  "name": "babel-typescript",
+  "description": "Code sample for the TypeScript Quickly book",
+  "homepage": "https://www.manning.com/books/typescript-quickly",
+  "license": "MIT",
+  "scripts": {
+    "babel": "babel src -d dist --extensions '.ts'",
+    "check_types": "tsc --noEmit src/index.ts"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-typescript": "^7.1.0"
+  }
 }
