@@ -1,14 +1,12 @@
 import "core-js/es6/array";
 
-declare var $: any
+declare var $: any;
 
 $("#customers").selectMenu();
 
-
 const data = [1, 2, 3, 4, 5];
 
-const array2 = data.find( item => item > 3 );
-
+const array2 = data.find((item) => item > 3);
 
 let x: string[];
 x = ["Joe", "Mary"];
@@ -21,3 +19,5 @@ let z: Array<string | number>;
 
 z = ["Joe", 20, 52, 12];
 // z = ["Joe", 20, 52, true];  // error
+
+greeting();
